@@ -1,2 +1,7 @@
 /vendor
 /plugins
+
+# Local WordPress instance (kaulverse-website is the local dev site; the
+# repo only tracks the deployable code — plugin/ and composer.json).
+/web
+.DS_Store

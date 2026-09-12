@@ -1,0 +1,26 @@
+{
+    "name": "ullahkz/kaulverse-website",
+    "description": "Kaul Verse site code — custom plugin(s) plus WordPress.org marketplace plugins, managed via Composer per the orchestrator spec (never committed as files).",
+    "type": "project",
+    "license": "proprietary",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "composer/installers": "^2.2"
+    },
+    "extra": {
+        "installer-paths": {
+            "plugins/{$name}/": ["type:wordpress-plugin"]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    },
+    "minimum-stability": "stable"
+}
